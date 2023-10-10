@@ -11,8 +11,9 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val name = intent.getStringExtra("userName")
-        val name_display = findViewById<TextView>(R.id.name_display)
-        name_display.text = name
+        val name_display = findViewById<TextView>(R.id.name_display).apply {
+            text = name
+        }
 
         val logoutButton = findViewById<Button>(R.id.button_logout)
         logoutButton.setOnClickListener{
