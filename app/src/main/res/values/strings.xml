@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UTS-1</string>
+    <string name="name_input_empty">Nama tidak boleh kosong</string>
+</resources>
